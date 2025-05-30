@@ -9,7 +9,7 @@ import Archivospage from "@/routes/dashboard/archivo";
 import AuthForm from "@/routes/loginauth/loginauth";
 
 import BuscadorPage from "@/routes/buscador/search";
-
+import Ubicacion from "./routes/ubicaciones/Ubicacion";
 
 function App() {
     const router = createBrowserRouter([
@@ -37,6 +37,10 @@ function App() {
                     path: "prestamos",
                     element: <h1 className="title">Prestamos</h1>,
                 },
+                {
+                    path: "ubicaciones",
+                    element: <Ubicacion/> 
+                }
 
             ],
         },
